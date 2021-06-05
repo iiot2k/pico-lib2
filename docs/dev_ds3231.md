@@ -8,7 +8,7 @@ The DS3231 is a extremely accurate real-time clock. <br>
 I2C interface with up to 400kHz. <br>
 Battery-Backup input for continuous timekeeping. <br>
 ### DS3231 extremely accurate RTC <br>
-![image](images\ds3231.png) <br>
+![image](images/ds3231.png) <br>
 ######  <br>
 ## **Functions:** <br>
 --- 

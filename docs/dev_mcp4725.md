@@ -9,7 +9,7 @@ The chip can connected direct to Pico with supply voltage 3.3V. <br>
 Maximum output voltage is VDD (3.3V). <br>
 ######  <br>
 ### MCP4725 DAC Module <br>
-![image](images\mcp4725.png) <br>
+![image](images/mcp4725.png) <br>
 ######  <br>
 MCP4725 IC2 address: <br>
 🔢Enum:  ***MCP4725_ADDR0*** I2C address (0x61) A0 to GND or open <br>

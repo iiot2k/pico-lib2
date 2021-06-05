@@ -12,7 +12,7 @@ Max. adc input voltage is 3.3V. <br>
 I2C address is selectable with ADDR input. <br>
 ######  <br>
 ### ADS1115 ADC Module <br>
-![image](images\ads1115.png) <br>
+![image](images/ads1115.png) <br>
 ######  <br>
 ## **Constants:** <br>
 --- 

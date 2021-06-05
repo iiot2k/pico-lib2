@@ -9,7 +9,7 @@ The chip can connected direct to Pico with supply voltage 3.3V. <br>
 Maximum output voltage is 3.3V. <br>
 ######  <br>
 ### MCP4728 DAC Module <br>
-![image](images\mcp4728.png) <br>
+![image](images/mcp4728.png) <br>
 ######  <br>
 MCP4728 Channel: <br>
 🔢Enum:  ***MCP4728_CHA*** Channel A <br>
