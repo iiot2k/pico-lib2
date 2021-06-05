@@ -5,11 +5,16 @@
 ######  <br>
 ## **Description:** <br>
 The ADS1115 is a 16-bit analog to digital converter with four inputs. <br>
-Supports single end or two differential input modes. <br>
 The conversion time is 10ms/channel. <br>
-The chip can connected direct to Pico with supply voltage 3.3V. <br>
-Max. adc input voltage is 3.3V. <br>
-I2C address is selectable with ADDR input. <br>
+A0 .. A3 are analog inputs. <br>
+Depends on configuration, input is Single-End to GND oder Differential. <br>
+Single-End to GND inputs allows always positive input voltage. <br>
+More than 3.3V on input can damage the adc input (on VDD 3.3V). <br>
+Default input range is +2.048V and Single-End to GND. <br>
+For measure up to 3.3V set input range to +4.096V. <br>
+If the input range is more than +2.048V, the chip interpolate the value. <br>
+For more input voltage than 3.3V use voltage divider resistor. <br>
+I2C address is selectable with ADDR pin. <br>
 ######  <br>
 ### ADS1115 ADC Module <br>
 ![image](images/ads1115.png) <br>
