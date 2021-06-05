@@ -1,0 +1,4 @@
+add_subdirectory(dev_hd44780)
+add_subdirectory(dev_ads1x15)
+add_subdirectory(dev_mcp472x)
+add_subdirectory(dev_ds3231)

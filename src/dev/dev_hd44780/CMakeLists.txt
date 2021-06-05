@@ -1,0 +1,6 @@
+if (NOT TARGET dev_hd44780)
+    add_library(dev_hd44780 INTERFACE)
+    target_include_directories(dev_hd44780 INTERFACE ${CMAKE_CURRENT_LIST_DIR})
+    target_sources(dev_hd44780 INTERFACE ${CMAKE_CURRENT_LIST_DIR}/dev_hd44780.c)
+    target_link_libraries(dev_hd44780 INTERFACE lib2_sys)
+endif()
