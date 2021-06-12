@@ -1,4 +1,4 @@
-# **Lib2** - Library for Raspberry Pi Pico
+# **Lib2** - C/C++ Library for Raspberry Pi Pico
 [![platform](https://img.shields.io/badge/Raspberry--Pico-Pico)](https://www.raspberrypi.org/products/raspberry-pi-pico/)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDRCZBQFWV3A6)
 
@@ -16,7 +16,6 @@ to your application ***CMakeLists.txt***.<br>
 
 Example ***CMakeLists.txt*** file entry:
 ```cmake
-...
 cmake_minimum_required(VERSION 3.12)
 
 # Pull in PICO SDK (must be before project)
@@ -50,7 +49,7 @@ pico_add_extra_outputs(myproj)
 
 ```
 ## Examples:
-On https://github.com/iiot2k/pico-lib2-examples are examples.
+https://github.com/iiot2k/pico-lib2-examples are examples for using Lib2.
 
 [CHANGELOG](CHANGELOG.md)<br>
 
