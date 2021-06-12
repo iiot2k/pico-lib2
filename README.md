@@ -3,7 +3,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDRCZBQFWV3A6)
 
 ## Description:
-Lib2 implements wrapper functions and device driver for Raspberry Pi Pico.<br>
+Lib2 library implements wrapper functions and device driver for Raspberry Pi Pico.<br>
 With lib2 it is more easy to write C/C++applications for Pico.<br>
 
 See [Getting Started with the Raspberry Pi Pico](https://rptl.io/pico-get-started)
