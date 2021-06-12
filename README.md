@@ -1,30 +1,53 @@
-# **Lib2** - Additional Library for Raspberry Pi Pico SDK
+# **Lib2** - Library for Raspberry Pi Pico
 [![platform](https://img.shields.io/badge/Raspberry--Pico-Pico)](https://www.raspberrypi.org/products/raspberry-pi-pico/)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDRCZBQFWV3A6)
 
 ## Description:
-Lib2 implements additional wrapper functions and device driver based on<br>
-Raspberry Pi Pico SDK.<br>
-With lib2 it is more easy to write applications for Pico.<br>
+Lib2 implements wrapper functions and device driver for Raspberry Pi Pico.<br>
+With lib2 it is more easy to write C/C++applications for Pico.<br>
 
 See [Getting Started with the Raspberry Pi Pico](https://rptl.io/pico-get-started)
 for information on getting up and running.
 
 ## Using:
 ⚠️Set environment variables ***PICO_SDK_PATH*** and ***PICO_LIB2_PATH***.<br>
-Lib2 is stuctured same as Pico SDK.<br>
 Add the file ***pico_lib2_import.cmake*** in folder ***external***<br>
-to your application and add to your ***CMakeLists.txt***.<br>
+to your application ***CMakeLists.txt***.<br>
 
 Example ***CMakeLists.txt*** file entry:
 ```cmake
 ...
+cmake_minimum_required(VERSION 3.12)
+
 # Pull in PICO SDK (must be before project)
 include(pico_sdk_import.cmake)
 
 # We also need LIB2
 include(pico_lib2_import.cmake)
-...
+
+# Your project
+project(myproj C CXX)
+
+# Used compiler 
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+
+#Your sourfiles
+add_executable(myproj main.c)
+
+# Add used libraries
+target_link_libraries(myproj
+    lib2_sys
+    dev_ads1x15
+)
+
+# Setup stdio 
+pico_enable_stdio_usb(myproj 0)
+pico_enable_stdio_uart(myproj 1)
+
+# Create map/bin/hex file etc.
+pico_add_extra_outputs(myproj)
+
 ```
 ## Examples:
 On https://github.com/iiot2k/pico-lib2-examples are examples.
